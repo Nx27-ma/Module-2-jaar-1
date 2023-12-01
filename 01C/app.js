@@ -13,10 +13,7 @@ class app {
         let meDown = false
         let meHaveANumber = 0.9
         let meMakeABool = false
-        let propertyArray = ["Class level vars:", this.greeting, this.appName, this.versionApp, this.versionAppDate, this.darkMode, this.isHereBecauseIHaveTo, this.isAlsoJustHere, this.moetHier,
-            "Local vars:", meDown, meHaveANumber, meMakeABool];
-        console.log("Hello world")
-        checkProperties(propertyArray);
+        
     }
     
 }
@@ -27,5 +24,16 @@ function checkProperties(propertyArray) {
     }
 }
 
+
+
 const appLication = new app();
 appLication.runApplication();
+
+let propertyArray = ["Class level vars:", app.greeting, app.appName, app.versionApp, app.versionAppDate, app.darkMode, app.isHereBecauseIHaveTo, app.isAlsoJustHere, app.moetHier,
+    "Local vars:", meDown, meHaveANumber, meMakeABool];
+console.log("Hello world")
+checkProperties(propertyArray);
+
+
+
+
